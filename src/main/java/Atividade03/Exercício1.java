@@ -13,7 +13,7 @@ public class Exercício1 {
         String genero[]=new String[50];
         
         
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 50; i++) {
             //Genero
             genero[i]=JOptionPane.showInputDialog(null,"Insira Genero nº"+i+":\n m=Masculino f=Feminino");
             
@@ -60,17 +60,16 @@ public class Exercício1 {
                    nova=idade[i];
                }
            }
-         
+        }
+        
         //media feminino
         alturaMedia=alturaMedia/nMulheres;
-
-            
-        }
-        for (int i = 0; i < 3; i++) {
+        
+        for (int i = 0; i < 50; i++) {
             System.out.println("Pessoa: "+i+"Altura: "+altura[i]+"/Idade: "+idade[i]+"/Genero: "+genero[i]+"\n");
         }
         
-        //media altura feminino
+        //Resultado final
         
         System.out.println("Maior altura: "+maiorAltura+"\nMenor altura: "+menorAltura+"\nMedia Altura mulher: "+alturaMedia+
                 "\nHomen  mais vcelho: "+velho+"\nMulher mais nova: "+nova);
