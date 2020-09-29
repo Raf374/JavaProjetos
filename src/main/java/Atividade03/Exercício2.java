@@ -9,12 +9,12 @@ public class Exercício2 {
         int nMulheres=0, trinta=0, castanho=0;
         int idade[]=new int[3];
         double porcentagem;
-        String cabelo[]=new String[3];
-        String genero[]=new String[3];
+        String cabelo[]=new String[300];
+        String genero[]=new String[300];
 
         
         
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 300; i++) {
             //Genero
             genero[i]=JOptionPane.showInputDialog(null,"Insira Genero nº"+i+":\n m=Masculino f=Feminino");
             
@@ -41,9 +41,9 @@ public class Exercício2 {
         
         //Porcentagem castanho
         //*trocar valor conforme numero de pessoas
-        porcentagem=(trinta*100)/3;
+        porcentagem=(trinta*100)/300;
         
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 300; i++) {
             System.out.println("Pessoa:"+i+" /Idade:"+idade[i]+" /Genero:"+genero[i]+" /Cabelo:"+cabelo[i]);
         }
         
